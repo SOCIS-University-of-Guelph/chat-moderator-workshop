@@ -145,10 +145,10 @@ Once you have completed the five ```TODOs``` found in ```vectorizer.py```, try r
 Your output should look something close to:
 
 ```
-vocab size (including UNK): 53696
+vocab size (including UNK): 53600
 
 sample train message: 'wow!'
-vector length: 53696
+vector length: 53600
 nonzero slots: 1
 
 sample test message: 'GG'
@@ -161,7 +161,7 @@ Only 1 nonzero slot for "wow!". The tokenizer just lowercases and splits on spac
 
 UNK count: 0 for the test message "GG" - that means "gg" already showed up in training, so it's not a stranger to the vocabulary. Try changing the sample index in the __main__ block to look at a different test message. Can you find one that does have UNKs?
 
-Heads up: when you get to train.py, the vocab size printed there will be noticeably smaller than the ~53,696 you saw here. That's because train.py calls fit(train_texts, min_count=3) instead of the default min_count=1, dropping any n-gram that showed up fewer than 3 times across the whole training set. That's the "keep out the long tail of typos and one-off phrases" idea from the fit() docstring in action.
+Heads up: when you get to train.py, the vocab size printed there will be noticeably smaller than the ~53,600 you saw here. That's because train.py calls fit(train_texts, min_count=3) instead of the default min_count=1, dropping any n-gram that showed up fewer than 3 times across the whole training set. That's the "keep out the long tail of typos and one-off phrases" idea from the fit() docstring in action.
 
 
 ## Step 4 - ```train()``` in ```train.py```
