@@ -76,7 +76,7 @@ with gr.Blocks(title="Chat Moderator") as demo:
     )
 
     strikes_state = gr.State(0)
-    chatbot = gr.Chatbot(label="Simulated chat", type="messages")
+    chatbot = gr.Chatbot(label="Simulated chat")
     msg_box = gr.Textbox(label="Type a message", placeholder="Type something and hit enter...")
     clear_btn = gr.Button("Reset chat")
 
