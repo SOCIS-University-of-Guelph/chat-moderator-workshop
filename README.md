@@ -9,8 +9,8 @@ Bag-of-(uni+bi)grams vectorization → small PyTorch MLP → Gradio front end, t
 ### 1. Clone the repo
 
 ```
-git clone https://github.com/SOCIS-University-of-Guelph/student-chat-moderator.git
-cd student-chat-moderator
+git clone https://github.com/SOCIS-University-of-Guelph/chat-moderator-workshop.git
+cd chat-moderator-workshop
 ```
 
 ### 2. Check your Python version
