@@ -1,0 +1,5 @@
+# >=5.0 required: the "tuples" Chatbot format app.py relied on implicitly
+# is deprecated in 5.x and removed entirely in 6.0, so app.py now sets
+# type="messages" explicitly. this floor keeps that consistent for everyone.
+gradio>=5.0
+numpy
